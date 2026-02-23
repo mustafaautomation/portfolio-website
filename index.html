@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Mustafa — QA Lead & Test Automation Engineer</title>
+  <meta name="description" content="QA Lead & Test Automation Engineer with 7+ years building enterprise-grade frameworks in Playwright, Cypress, k6, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Nav ─────────────────────────────────────────────── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MM<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact"><span class="nav-cta">Hire Me</span></a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#stack" class="mobile-link">Stack</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for freelance projects
+      </div>
+      <h1 class="hero-name">Muhammad<br/><span class="hero-name-accent">Mustafa</span></h1>
+      <div class="hero-title">
+        <span class="hero-title-static">I build </span>
+        <span class="hero-typed" id="typed"></span>
+      </div>
+      <p class="hero-desc">
+        QA Lead with 7+ years turning fragile test suites into bulletproof automation frameworks.
+        Currently at <strong>Respond.io</strong> — Top Rated Plus on Upwork with 100% Job Success.
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="7">0</span><span class="stat-plus">+</span><p>Years Exp</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span><p>Job Success</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span><p>Projects</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="6">0</span><span class="stat-plus"></span><p>OSS Repos</p></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="https://www.upwork.com/freelancers/mustafahameed1" target="_blank" rel="noopener" class="btn btn-outline">Hire on Upwork</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── About ─────────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Quality is not an act,<br/>it's a <span class="highlight">habit</span>.</h2>
+          <p>
+            I specialise in building end-to-end test automation infrastructure from the ground up —
+            frameworks that are maintainable, scalable, and integrated tightly into CI/CD pipelines.
+          </p>
+          <p>
+            My work spans functional UI testing, REST API validation, performance benchmarking,
+            and real-time metrics visibility. I believe QA should enable velocity, not slow it down.
+          </p>
+          <p>
+            Based in <strong>Kuala Lumpur</strong>. Available for remote freelance engagements worldwide.
+          </p>
+          <div class="about-badges">
+            <span class="badge badge-green">Top Rated Plus · Upwork</span>
+            <span class="badge badge-blue">QA Lead · Respond.io</span>
+            <span class="badge badge-purple">Remote-First</span>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="about-card" data-delay="0">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h4>Framework Design</h4>
+            <p>POM architecture, fixture injection, auth state management, reusable component libraries.</p>
+          </div>
+          <div class="about-card" data-delay="100">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h4>CI/CD Integration</h4>
+            <p>GitHub Actions pipelines with parallel execution, artifact uploads, and Slack notifications.</p>
+          </div>
+          <div class="about-card" data-delay="200">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h4>Metrics & Visibility</h4>
+            <p>Custom dashboards, JUnit XML ingestion, pass rate trends, flaky test detection.</p>
+          </div>
+          <div class="about-card" data-delay="300">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+            </div>
+            <h4>Performance Testing</h4>
+            <p>k6 load, stress, spike, and soak testing with SLO thresholds and HTML report generation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stack ─────────────────────────────────────────────── -->
+  <section id="stack" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Tech Stack</div>
+      <h2 class="section-title section-title-center">Tools I work with <span class="highlight">daily</span></h2>
+      <div class="stack-grid">
+
+        <div class="stack-group">
+          <h3 class="stack-group-title">E2E Testing</h3>
+          <div class="stack-items">
+            <div class="stack-item"><div class="stack-icon playwright"></div><span>Playwright</span></div>
+            <div class="stack-item"><div class="stack-icon cypress"></div><span>Cypress</span></div>
+            <div class="stack-item"><div class="stack-icon selenium"></div><span>Selenium</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h3 class="stack-group-title">Languages</h3>
+          <div class="stack-items">
+            <div class="stack-item"><div class="stack-icon typescript"></div><span>TypeScript</span></div>
+            <div class="stack-item"><div class="stack-icon javascript"></div><span>JavaScript</span></div>
+            <div class="stack-item"><div class="stack-icon python"></div><span>Python</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h3 class="stack-group-title">API & Performance</h3>
+          <div class="stack-items">
+            <div class="stack-item"><div class="stack-icon k6"></div><span>k6</span></div>
+            <div class="stack-item"><div class="stack-icon postman"></div><span>Postman</span></div>
+            <div class="stack-item"><div class="stack-icon jest"></div><span>Jest / SuperTest</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h3 class="stack-group-title">CI/CD & Infra</h3>
+          <div class="stack-items">
+            <div class="stack-item"><div class="stack-icon github"></div><span>GitHub Actions</span></div>
+            <div class="stack-item"><div class="stack-icon docker"></div><span>Docker</span></div>
+            <div class="stack-item"><div class="stack-icon node"></div><span>Node.js</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ─────────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">Open Source</div>
+      <h2 class="section-title section-title-center">Production-quality <span class="highlight">frameworks</span></h2>
+      <div class="projects-grid">
+
+        <a href="https://github.com/mustafaautomation/playwright-enterprise-framework" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon project-icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+          <h3>Playwright Enterprise Framework</h3>
+          <p>TypeScript, POM architecture, auth state caching via storageState, multi-browser CI with GitHub Actions.</p>
+          <div class="project-tags">
+            <span>Playwright</span><span>TypeScript</span><span>GitHub Actions</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/mustafaautomation/cypress-bdd-starter" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon project-icon-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+          <h3>Cypress BDD Starter</h3>
+          <p>Cucumber + Gherkin feature files, cy.session auth caching, POM page objects, full CI integration.</p>
+          <div class="project-tags">
+            <span>Cypress</span><span>Cucumber</span><span>BDD</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/mustafaautomation/api-testing-suite" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon project-icon-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+          <h3>API Testing Suite</h3>
+          <p>SuperTest + Jest with Zod schema validation, contract testing, data-driven tests, and SLO assertions.</p>
+          <div class="project-tags">
+            <span>SuperTest</span><span>Jest</span><span>Zod</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/mustafaautomation/performance-testing-k6" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon project-icon-amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+          <h3>Performance Testing k6</h3>
+          <p>Full k6 suite — smoke, load, stress, spike, and soak scenarios with shared SLO thresholds and HTML reports.</p>
+          <div class="project-tags">
+            <span>k6</span><span>Load Testing</span><span>SLO</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/mustafaautomation/qa-metrics-dashboard" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon project-icon-cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+          <h3>QA Metrics Dashboard</h3>
+          <p>Real-time dashboard ingesting JUnit XML — pass rate trends, suite breakdowns, browser coverage, failure analysis.</p>
+          <div class="project-tags">
+            <span>Node.js</span><span>Chart.js</span><span>JUnit XML</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/mustafaautomation/llm-testing-toolkit" target="_blank" rel="noopener" class="project-card project-card-coming">
+          <div class="project-card-header">
+            <div class="project-icon project-icon-pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <span class="coming-soon-badge">Coming Soon</span>
+          </div>
+          <h3>LLM Testing Toolkit</h3>
+          <p>Framework for testing AI/LLM-powered applications — prompt regression, output schema validation, hallucination detection.</p>
+          <div class="project-tags">
+            <span>TypeScript</span><span>AI Testing</span><span>LLM</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="projects-footer">
+        <a href="https://github.com/mustafaautomation" target="_blank" rel="noopener" class="btn btn-outline">
+          View all repos on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ─────────────────────────────────────────────── -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's build something<br/><span class="highlight">that doesn't break.</span></h2>
+        <p class="contact-desc">
+          Looking for a QA engineer who can own your testing strategy end-to-end?
+          I'm available for freelance projects — frameworks, audits, CI setup, and more.
+        </p>
+        <div class="contact-links">
+          <a href="https://www.upwork.com/freelancers/mustafahameed1" target="_blank" rel="noopener" class="contact-btn contact-btn-upwork">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.452-5.439-5.452z"/></svg>
+            Hire me on Upwork
+          </a>
+          <a href="https://github.com/mustafaautomation" target="_blank" rel="noopener" class="contact-btn contact-btn-github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub Profile
+          </a>
+          <a href="https://www.linkedin.com/in/mustafahameed1" target="_blank" rel="noopener" class="contact-btn contact-btn-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built by Muhammad Mustafa · <a href="https://github.com/mustafaautomation" target="_blank" rel="noopener">@mustafaautomation</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
