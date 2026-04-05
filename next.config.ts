@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  /* SSR mode — no static export */
 };
 
 export default nextConfig;
