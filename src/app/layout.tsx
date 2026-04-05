@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["300","400","500","600","700","800"] });
+const heading = Space_Grotesk({ subsets: ["latin"], variable: "--font-heading", weight: ["400","500","600","700"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["300","400","500","600","700"] });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", weight: ["400","500"] });
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
+    <html lang="en" className={`${heading.variable} ${inter.variable} ${mono.variable}`}>
       <body className="min-h-screen font-[var(--font-inter)] antialiased grain grid-bg">
         {children}
       </body>

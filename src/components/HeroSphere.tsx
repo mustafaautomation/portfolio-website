@@ -12,7 +12,6 @@ function Sphere() {
     if (!mesh.current) return;
     mesh.current.rotation.x = clock.getElapsedTime() * 0.15;
     mesh.current.rotation.y = clock.getElapsedTime() * 0.2;
-    // React to mouse
     mesh.current.position.x = THREE.MathUtils.lerp(mesh.current.position.x, pointer.x * 0.5, 0.05);
     mesh.current.position.y = THREE.MathUtils.lerp(mesh.current.position.y, pointer.y * 0.3, 0.05);
   });
@@ -22,8 +21,8 @@ function Sphere() {
       <mesh ref={mesh} scale={2.2}>
         <icosahedronGeometry args={[1, 64]} />
         <MeshDistortMaterial
-          color="#00E599"
-          emissive="#00E599"
+          color="#326BFF"
+          emissive="#326BFF"
           emissiveIntensity={0.15}
           roughness={0.2}
           metalness={0.8}
@@ -62,12 +61,9 @@ function Particles() {
   return (
     <points ref={ref}>
       <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          args={[positions, 3]}
-        />
+        <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
-      <pointsMaterial size={0.015} color="#00E599" transparent opacity={0.4} sizeAttenuation />
+      <pointsMaterial size={0.015} color="#326BFF" transparent opacity={0.4} sizeAttenuation />
     </points>
   );
 }
@@ -82,8 +78,8 @@ export default function HeroSphere() {
         style={{ background: "transparent" }}
       >
         <ambientLight intensity={0.3} />
-        <directionalLight position={[5, 5, 5]} intensity={0.8} color="#00E599" />
-        <pointLight position={[-5, -5, 5]} intensity={0.3} color="#ffffff" />
+        <directionalLight position={[5, 5, 5]} intensity={0.8} color="#326BFF" />
+        <pointLight position={[-5, -5, 5]} intensity={0.3} color="#8F42EC" />
         <Sphere />
         <Particles />
       </Canvas>
