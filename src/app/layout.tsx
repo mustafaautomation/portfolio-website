@@ -2,26 +2,18 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["300","400","500","600","700","800"] });
+const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", weight: ["400","500"] });
 
 export const metadata: Metadata = {
-  title: "Muhammad Mustafa — QA Automation & AI Enablement Engineer",
-  description:
-    "44+ open-source repos across 6 languages. QA Automation, AI Enablement, Claude/MCP/n8n expertise. Top Rated Plus on Upwork.",
-  openGraph: {
-    title: "Muhammad Mustafa — QA Automation & AI Enablement",
-    description: "44+ repos, 6 languages, AI-powered QA transformation",
-    url: "https://portfolio-website-j5z7.onrender.com",
-  },
+  title: "Muhammad Mustafa — QA Automation & AI Enablement",
+  description: "44+ open-source repos across 6 languages. QA Automation, AI Enablement, Claude/MCP/n8n. Top Rated Plus on Upwork.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
-      <body className="min-h-screen font-[var(--font-inter)] antialiased">
+    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
+      <body className="min-h-screen font-[var(--font-inter)] antialiased grain grid-bg">
         {children}
       </body>
     </html>
