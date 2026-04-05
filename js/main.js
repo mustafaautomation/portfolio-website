@@ -19,11 +19,12 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 // ── Typing effect ──────────────────────────────────────────
 const phrases = [
   'test automation frameworks.',
+  'AI-powered testing pipelines.',
   'CI/CD pipelines that ship fast.',
-  'bulletproof API test suites.',
-  'performance benchmarks with k6.',
-  'BDD specs teams actually read.',
-  'QA systems that scale.',
+  'MCP servers for AI agents.',
+  'self-healing test orchestrators.',
+  'n8n automation workflows.',
+  'QA systems across 6 languages.',
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typed');
